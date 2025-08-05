@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>青心烏龍｜我的第一個HTML頁面</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #fffaf3;
+      color: #2c2c2c;
+      font-family: "Noto Sans TC", "微軟正黑體", sans-serif;
+      scroll-behavior: smooth;
+    }
+    h1, h2, h3, .card-title {
+      color: #3d5d2c;
+      font-weight: bold;
+    }
+    .card {
+      background-color: #fffef9;
+      border: 1px solid #e0e0e0;
+    }
+    .card img {
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .btn-danger {
+      background-color: #a42d2d;
+      border-color: #a42d2d;
+    }
+    .btn-danger:hover {
+      background-color: #842020;
+      border-color: #842020;
+    }
+    .faq .accordion-button {
+      background-color: #f8f8f8;
+      font-weight: 500;
+    }
+    .section-cta {
+      background-color: #fff2f0;
+      padding: 40px 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .sticky-cta {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+    .sticky-cta a {
+      background-color: #c00;
+      padding: 15px 25px;
+      font-size: 18px;
+      border-radius: 50px;
+      color: white;
+      text-decoration: none;
+    }
+    .sticky-cta a:hover {
+      background-color: #900;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero 區塊 -->
+  <div class="container text-center my-5">
+    <img src="https://fbuon.com/wp-content/uploads/2021/12/1638945143-86d37b9d695a296d11ce0d4dce8be0d4.jpg" class="img-fluid rounded mb-4" alt="青心烏龍主圖">
+    <h1 class="display-5 fw-bold">一杯每天都想喝的青心烏龍</h1>
+    <p class="lead">來自南投民間，用傳統烘焙烘出花香回甘</p>
+    <p class="text-muted">不上火、不苦澀、無混茶，就是純粹自然的味道</p>
+    <a href="#buy" class="btn btn-danger btn-lg mt-3">立即下單 ➤</a>
+  </div>
+
+  <!-- 產品圖文介紹 -->
+  <div class="container my-5"> 
+    <div class="row align-items-center"> 
+      <div class="col-md-6">              
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/P1080290.JPG" class="img-fluid rounded">
+      </div>
+      <div class="col-md-6">
+        <h3>來自南投的青心烏龍</h3>
+        <p>二十年老師傅烘焙，層次甘醇。手採自然農法製茶，讓你喝得安心又香濃。</p>
+        <a href="#buy" class="btn btn-outline-danger mt-3">立即前往下單區 ➤</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 三大賣點（FAB） -->
+  <div class="container my-5">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://github.com/Ankikuya/image2/blob/main/images/Image00003.jpg?raw=true" class="card-img-top" alt="機器採收圖">
+          <div class="card-body text-center">
+            <img src="https://cdn-icons-png.flaticon.com/128/10406/10406757.png" style="width:40px; margin-bottom:10px;">
+            <h5 class="card-title">南投民間機器採收茶葉</h5>
+            <h6 class="text-muted">成本穩定、品質穩定</h6>
+            <p class="card-text">每一包都喝得到一樣的味道，不踩雷</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://github.com/Ankikuya/image2/blob/main/images/Image00002.jpg?raw=true" class="card-img-top" alt="烘焙圖">
+          <div class="card-body text-center">
+            <img src="https://cdn-icons-png.flaticon.com/128/456/456212.png" style="width:40px; margin-bottom:10px;">
+            <h5 class="card-title">傳統烘焙工法</h5>
+            <h6 class="text-muted">溫潤厚實、帶有熟香</h6>
+            <p class="card-text">比起超商茶包，更能感受到香氣層次</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://github.com/Ankikuya/image2/blob/main/images/Image00001.jpg?raw=true" class="card-img-top" alt="無混茶圖">
+          <div class="card-body text-center">
+            <img src="https://cdn-icons-png.flaticon.com/128/1828/1828640.png" style="width:40px; margin-bottom:10px;">
+            <h5 class="card-title">無混茶 + 無添加香料</h5>
+            <h6 class="text-muted">單一純茶、不造假</h6>
+            <p class="card-text">不擔心身體負擔，純天然回甘更持久</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA 區 -->
+  <div class="container text-center my-5 section-cta" id="buy">
+    <h2>春茶限量搶購中</h2>
+    <p class="mb-3 text-danger fw-bold">限時優惠：只到 8/15 為止！三包免運＋送試喝包</p>
+    <small class="text-muted">💡 熱賣商品｜剩餘庫存：<strong>27</strong> 包</small>
+    <div class="mt-3">
+      <a href="https://godshifu.cashier.ecpay.com.tw/product/000000000695007" target="_blank" class="btn btn-danger btn-lg">立即下單 ➤</a>
+    </div>
+  </div>
+
+  <!-- 顧客見證 -->
+  <div class="container my-5">
+    <div class="bg-light p-4 rounded shadow-sm">
+      <h4 class="text-center mb-3">顧客見證</h4>
+      <p class="text-center">「喝過這款茶，其他都淡了」 – 陳先生</p>
+      <div class="text-center mt-3">
+        <a href="#buy" class="btn btn-outline-danger">我也要試試看 ➤</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ 區 -->
+  <div class="container my-5 faq">
+    <h4 class="mb-4">常見問題</h4>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            Q：這是什麼茶種？
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show">
+          <div class="accordion-body">A：金萱</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Q：有機嗎？
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse">
+          <div class="accordion-body">A：不是</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+            Q：怎麼保存？
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse">
+          <div class="accordion-body">A：常溫保存</div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="#buy" class="btn btn-outline-danger">我了解了，現在下單 ➤</a>
+    </div>
+  </div>
+
+  <!-- Sticky CTA 漂浮按鈕 -->
+  <div class="sticky-cta">
+    <a href="#buy">立即購買</a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
